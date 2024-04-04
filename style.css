@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    gap: 15px;
+
+}
+
+img{
+    height: 80vh;
+    border-radius: 5px;
+    animation: slideIn 3s movingRight alternate ease-in-out;
+}
+
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+.txt form h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.txt form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.txt form p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    font-size: 15px;
+}
+
+.txt form button{
+    background-color: dodgerblue;
+    padding: 10px;
+    width: 10vw;
+    border: 1px ;
+    border-radius: 15px;
+    color: white;
+    
+}
+
+.txt form button a {
+    text-decoration: none;
+    color: white;
+}
+
+.txt form button:hover{
+    background-color: rgb(123, 182, 241);
+    font-weight: bold;
+}
+
+
