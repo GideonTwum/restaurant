@@ -11,7 +11,7 @@ form{
     display: flex;
     margin: auto;
     margin-top: 4px;
-    padding: 40px;
+    padding: 30px;
     border-radius: 10px;
     flex-direction: column;
     box-shadow: 10px 10px 10px  rgba(161, 157, 157, 0.2);
@@ -129,7 +129,7 @@ form h1{
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-right: 10.5rem;
+    margin-right: 8rem;
 }
 
 .delivery label{
