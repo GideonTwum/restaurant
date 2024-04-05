@@ -5,11 +5,33 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+main{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.c_photo img{
+    height: 80vh;
+    border-radius: 10px;
+    margin-top: 4px;
+    animation: fromDown 2s alternate forwards;
+}
+
+@keyframes fromDown {
+    from {
+        transform: translateY(100px);
+    }
+    to {
+        transform: translateY(-0px);
+    }
+}
 
 form{
     background-color: white;
     display: flex;
-    margin: auto;
     margin-top: 4px;
     padding: 30px;
     border-radius: 10px;
