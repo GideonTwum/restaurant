@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <main>
         <div class="c_photo">
-            <img src="/images/order.jpg" alt="">
+            <img src="./images/order.jpg" alt="">
         </div>
-        <form action="">
+        <form action="addOrder.php" method ="POST">
             <div class="head">
                 <h1 class="letter">Make A</h1>
                 <h1>n Order</h1>
@@ -19,16 +19,16 @@
             <div class="space">
                 <div class="space_1">
                     <label for="">First name</label>
-                    <input type="text" placeholder="enter your First name ">
+                    <input type="text" placeholder="enter your First name " name="first_name">
                 </div>
                 <div class="space_1">
                     <label for="">Phone number</label>
-                    <input type="number" placeholder="+233">
+                    <input type="number" placeholder="+233" name="phone_number">
                 </div>
             </div>
            <div class="space_select">
             <label for="">Meals Available</label>
-            <select name="Meals Available" class="drop_down" id="Meals Available">
+            <select name="Meals Available" class="drop_down" id="Meals_Available">
                 <option value="Pizza">Select a meal</option>
                 <option value="Pizza">Fried rice</option>
                 <option value="Pizza">Waakye</option>
@@ -42,11 +42,11 @@
             <label for="">Delivery</label>
             <div >
                 <label for="">Yes</label>
-                <input type="checkbox">
+                <input type="checkbox" name = "delivery">
             </div>
             <div>
                 <label for="">No</label>
-                <input type="checkbox">
+                <input type="checkbox" name = "delivery">
             </div>
            
             
@@ -55,17 +55,17 @@
            <div class="status">
             <div>
                 <label for="">VIP</label>
-                <input type="radio">
+                <input type="radio" name = "status">
             </div>
             <div>
                 <label for="">Regular</label>
-                <input type="radio">
+                <input type="radio" name = "status">
             </div>
            </div>
 
             <div class="space_x">
                 <label for="">Any Additions to the Order?</label>
-               <textarea placeholder="type here...." name="" id="" cols="30" rows="10"></textarea>
+               <textarea placeholder="type here...." name="" id="" cols="30" rows="10" name="additions"></textarea>
             </div>
 
             <button class="sub">Submit</button>
