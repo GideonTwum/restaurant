@@ -10,7 +10,7 @@ $customer_type = isset($_POST['customer_type']) ? $_POST['customer_type'] : "Reg
 $additions = isset($_POST['additions']) ? htmlspecialchars($_POST['additions']) : "";
 
 // Prepare and execute the SQL statement using prepared statements
-$sql = "INSERT INTO orders (first_name, phone_number, meal, has_delivery, customer_type, additions) VALUES (?, ?, ?, ?, ?, ?)";
+$sql = "INSERT INTO orders (first_name, phone_number, meal, has_delivery, customer_type, additions) VALUES (?, ?, ?, ?, ?, ?)"; 
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("ssssss", $first_name, $phone_number, $meal, $has_delivery, $customer_type, $additions);
 

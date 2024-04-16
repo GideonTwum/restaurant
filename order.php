@@ -8,8 +8,11 @@
 </head>
 <body>
     <main>
-        <div class="c_photo">
+        <div class="c_photo" style="display:flex; flex-direction:column; align-items: center; gap:10px;">
             <img src="./images/order.jpg" alt="">
+            <div>
+                <a href="./index.php" style="text-decoration:none; color:dodgerblue; font-size:15px;">Back to home</a>
+            </div>
         </div>
         <form action="addOrder.php" method="POST">
             <div class="head">
