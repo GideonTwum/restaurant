@@ -28,7 +28,7 @@
             </div>
            <div class="space_select">
             <label for="">Meals Available</label>
-            <select name="Meals Available" class="drop_down" id="Meals_Available">
+            <select name="Meals Available" class="drop_down" id="meal">
                 <option value="Pizza">Select a meal</option>
                 <option value="Pizza">Fried rice</option>
                 <option value="Pizza">Waakye</option>
@@ -42,11 +42,11 @@
             <label for="">Delivery</label>
             <div >
                 <label for="">Yes</label>
-                <input type="checkbox" name = "delivery">
+                <input type="checkbox" name = "has_delivery">
             </div>
             <div>
                 <label for="">No</label>
-                <input type="checkbox" name = "delivery">
+                <input type="checkbox" name = "has_delivery">
             </div>
            
             
@@ -55,11 +55,11 @@
            <div class="status">
             <div>
                 <label for="">VIP</label>
-                <input type="radio" name = "status">
+                <input type="radio" name = "customer_type">
             </div>
             <div>
                 <label for="">Regular</label>
-                <input type="radio" name = "status">
+                <input type="radio" name = "customer_type">
             </div>
            </div>
 

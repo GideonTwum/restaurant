@@ -4,14 +4,14 @@
     //retrieving / adding form data
     $first_name = $_POST['first_name'];
     $phone_number = $_POST['phone_number'];
-    $meal = $_POST['Meals_Available'];
-    $delivery = isset($_POST['delivery']) ? $_POST['delivery'] : "No";
-    $status = isset($_POST['status']) ? $_POST['status'] : "Regular";
+    $meal = $_POST['meal'];
+    $has_delivery = isset($_POST['has_delivery']) ? $_POST['has_delivery'] : "No";
+    $customer_type = isset($_POST['customer_type']) ? $_POST['customer_type'] : "Regular";
     $additions = isset($_POST['additions']) ? $_POST['additions'] : "";
 
 
     //Inserting data into the database
-    $sql = "INSERT INTO orders (first_name, phone_number, meal, delivery, status , additions ) VALUES ('$first_name', '$phone_number', '$meal' , '$delivery' , '$status',  '$additions')";
+    $sql = "INSERT INTO orders (first_name, phone_number, meal, has_delivery, customer_type , additions ) VALUES ('$first_name', '$phone_number', '$meal' , '$has_delivery' , '$customer_type',  '$additions')";
 
     if ($conn->query($sql) === TRUE){
         echo "added new record successfully";
