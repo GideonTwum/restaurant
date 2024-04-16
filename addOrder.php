@@ -7,10 +7,11 @@
     $meal = $_POST['Meals_Available'];
     $delivery = isset($_POST['delivery']) ? $_POST['delivery'] : "No";
     $status = isset($_POST['status']) ? $_POST['status'] : "Regular";
-    $additions = $_POST['additions'];
+    $additions = isset($_POST['additions']) ? $_POST['additions'] : "";
+
 
     //Inserting data into the database
-    $sql = "INSERT INTO orders (first_name, phone_number, meal, delivery, status , additions ) VALUES ('$first_name', '$phone_number', '$meal' , '$delivery' ,  '$additions')";
+    $sql = "INSERT INTO orders (first_name, phone_number, meal, delivery, status , additions ) VALUES ('$first_name', '$phone_number', '$meal' , '$delivery' , '$status',  '$additions')";
 
     if ($conn->query($sql) === TRUE){
         echo "added new record successfully";
