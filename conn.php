@@ -4,7 +4,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "restaurant";
+$dbname = "chopbar_db";
 
 //Creating a connection
 $conn = new mysqli($servername, $username , $password , $dbname );

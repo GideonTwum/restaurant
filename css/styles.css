@@ -191,11 +191,7 @@ form h1{
     color: #ccc;
 }
 
-.datetime input{
+.datee input{
     padding: 10px;
-    background-color: dodgerblue;
-    border-radius: 10px;
-    width: 20vw;
-
-
+    
 }
