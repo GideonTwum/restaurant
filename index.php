@@ -9,13 +9,13 @@
 <body>
     <main>
         <div class="cover-photo">
-            <img src="./images/chef.png" alt="a beautiful cook">
+            <img src="./images/chef.png" alt="an Ai generated image for female chef">
         </div>
         <div class="txt">
             <form action="">
                 <h1>Welcome to<br> <a href="">G_TWELVE</a> RESTAURANT!</h1>
                 <p>Enjoy the best services and a great experience</p>
-                <button  href="/order.php"><a href="/order.php">Order</a></button>
+                <button   ><a href="http://localhost/restaurant/order.php">Order</a></button>
             </form>
         </div>
     </main>

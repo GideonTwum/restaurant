@@ -190,3 +190,12 @@ form h1{
     font-size: 10px;
     color: #ccc;
 }
+
+.datetime input{
+    padding: 10px;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    width: 20vw;
+
+
+}

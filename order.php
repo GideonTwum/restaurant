@@ -65,6 +65,10 @@
                 <label for="additions">Any Additions to the Order?</label>
                 <textarea placeholder="Type here...." id="additions" cols="30" rows="10" name="additions"></textarea>
             </div>
+            <div class="datetime">
+                <input type="date">
+
+            </div>
             <button type="submit" class="sub">Submit</button>
             <div class="powered">
                 <p>Powered by G_TWELVE <br> Version 101.01</p>
